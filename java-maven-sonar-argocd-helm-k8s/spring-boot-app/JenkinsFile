@@ -5,13 +5,13 @@ pipeline {
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
-//   stages {
-//     stage('Checkout') {
-//       steps {
-//         sh 'echo passed'
-//         //git branch: 'main', url: 'https://github.com/ashokg1992/Jenkins-Zero-To-Hero.git'
-//       }
-//     }
+  stages {
+    stage('Checkout') {
+      steps {
+        sh 'echo passed'
+        //git branch: 'main', url: 'https://github.com/ashokg1992/Jenkins-Zero-To-Hero.git'
+      }
+   }
 //     stage('Build and Test') {
 //       steps {
 //         sh 'ls -ltr'
